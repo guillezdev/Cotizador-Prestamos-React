@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <main className="mx-auto my-5 p-10 bg-white shadow rounded-sm  max-w-md text-center">
+      <main className="mx-auto my-5 p-10 shadow-md bg-white rounded-md  max-w-md text-center">
         <Header />
         <input
           type="range"
@@ -38,7 +38,7 @@ function App() {
           step={100}
         />
         <ButtonControls setRange={setRange} />
-        <span className="text-xl text-indigo-500 space-x-0">
+        <span className="text-xl font-bold text-indigo-500 space-x-0">
           {formatearDinero(range)}
         </span>
         <h2 className="text-lg font-semibold">
@@ -57,7 +57,7 @@ function App() {
           <option value="12">12</option>
           <option value="24">24</option>
         </select>
-        <div className="bg-blue-100 m-4 p-2">
+        <div className="bg-blue-100 rounded-md m-4 p-2">
           <h2 className="text-lg font-semibold">
             Resumen <span className="text-blue-500">de pago</span>
           </h2>
